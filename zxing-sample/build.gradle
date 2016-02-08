@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    //compile project(":zxing")
+    compile 'me.dm7.barcodescanner:zxing:1.8.4'
+    compile supportLibraryDependency
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    //compile 'me.relex:circleindicator:1.1.5@aar'
+}
+
+repositories {
+    maven { url "http://dl.bintray.com/populov/maven" }
+    mavenCentral()
+}
+
+android {
+    defaultConfig {
+        applicationId "${project.group}.zxing.sample"
+
+    }
+}

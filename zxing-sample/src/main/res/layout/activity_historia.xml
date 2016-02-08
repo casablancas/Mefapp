@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/historia"
+    android:background="@drawable/fp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:src="@drawable/fondop"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_servicios"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/gesture33"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/profile_image"
+        android:layout_alignLeft="@+id/profile_image"
+        android:layout_alignStart="@+id/profile_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Galeria"
+        android:textSize="25dp"
+        android:id="@+id/txtServicios"
+        android:layout_below="@+id/btn_servicios"
+        android:layout_marginLeft="90dp"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_informacion"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/video190"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/profile_image"
+        android:layout_alignRight="@+id/profile_image"
+        android:layout_alignEnd="@+id/profile_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/white"
+        android:text="Videos"
+        android:textSize="25dp"
+        android:id="@+id/txtInfo"
+        android:layout_below="@+id/btn_informacion"
+        android:layout_alignLeft="@+id/btn_informacion"
+        android:layout_alignStart="@+id/btn_informacion"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_historia"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/condenser10"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/txtInfo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Narración"
+        android:textSize="25dp"
+        android:id="@+id/txtNarracion"
+        android:layout_below="@+id/btn_historia"
+        android:layout_alignLeft="@+id/btn_historia">
+
+    </TextView>
+
+</RelativeLayout>
